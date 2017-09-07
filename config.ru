@@ -1,9 +1,9 @@
-application = proc do
-  json = { 'message' => 'Hello, world!' }
-  header = { 'Content-Type' => 'application/json' }
-  status = 200
+require 'grape'
 
-  [status, header, [json.to_s]]
+class MyApi < Grape::API
+  get '/' do
+    {message: 'hello'}
+  end
 end
 
-run application
+run MyApi
