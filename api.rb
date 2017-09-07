@@ -3,7 +3,7 @@ class BookAPI < Grape::API
 
   helpers do
     def books
-      @books ||= []
+      Application.books
     end
   end
 
