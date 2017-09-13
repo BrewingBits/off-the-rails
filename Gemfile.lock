@@ -35,6 +35,7 @@ GEM
     rack-accept (0.4.5)
       rack (>= 0.4)
     sequel (5.0.0)
+    sqlite3 (1.3.13)
     thread_safe (0.3.6)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
@@ -52,6 +53,7 @@ DEPENDENCIES
   pg
   rack
   sequel
+  sqlite3
 
 BUNDLED WITH
    1.15.4
