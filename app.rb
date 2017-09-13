@@ -1,3 +1,6 @@
+require 'pg'
+require 'sequel'
+
 class MyApp
   def books
     @books ||= []
